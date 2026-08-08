@@ -14,7 +14,7 @@ const projects = [
             "Analyzed driver-level data to study performance and predict driver retention using data cleaning, exploratory analysis, and machine learning.",
         technologies: ["Python", "Pandas", "Scikit-learn"],
         image: diverImage,
-        github: "https://github.com/yourusername/drive-retention-analysis",
+        github: "https://github.com/sriramteja02/drive-retention-analysis",
         live: "#",
     },
 
@@ -25,7 +25,7 @@ const projects = [
             "A web-based Sudoku game built with HTML, CSS, and JavaScript. Includes a 9x9 grid, dynamic puzzle generation, and validation.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: sudokuImage,
-        github: "https://github.com/yourusername/sudoku-game",
+        github: "https://github.com/sriramteja02/sudoku-game",
         live: "#",
     },
 
@@ -36,7 +36,7 @@ const projects = [
             "Analyzed 9,000+ sales records to identify trends and product performance. Cleaned data using Python and created an interactive Power BI dashboard.",
         technologies: ["Python", "Pandas", "Power BI"],
         image: salesImage,
-        github: "https://github.com/yourusername/sales-dashboard",
+        github: "https://github.com/sriramteja02/sales-dashboard",
         live: "#",
     },
 
@@ -47,7 +47,7 @@ const projects = [
             "Analyzed employee data to study attrition trends across departments, experience levels, and salary bands using SQL and data analysis.",
         technologies: ["SQL", "Python", "Data Analysis"],
         image: hrImage,
-        github: "https://github.com/yourusername/HR-Attrition",
+        github: "https://github.com/sriramteja02/HR-Attrition",
         live: "#",
     },
 
@@ -58,7 +58,7 @@ const projects = [
             "Developed a personal expense tracking application to simplify daily expense recording and improve spending awareness.",
         technologies: ["Python", "JavaScript", "JSON"],
         image: expenseImage,
-        github: "https://github.com/yourusername/Expense-Tracker-System",
+        github: "https://github.com/sriramteja02/Expense-Tracker-System",
         live: "#",
     },
 
@@ -69,7 +69,7 @@ const projects = [
             "Built a machine learning web application for predicting employee attrition using HR data with Random Forest and Gradient Boosting models.",
         technologies: ["Python", "Flask", "Machine Learning"],
         image: emploImage,
-        github: "https://github.com/yourusername/Attrition-prediction-system-ml",
+        github: "https://github.com/sriramteja02/Attrition-prediction-system-ml",
         live: "#",
     },
 ];
