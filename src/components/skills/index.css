@@ -1,0 +1,314 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills {
+    min-height: 100vh;
+
+    padding: 100px 8%;
+
+    background-color: #f4e8d0;
+
+    /* Same grid style as your portfolio */
+    background-image:
+        linear-gradient(
+            rgba(104, 47, 47, 0.06) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(104, 47, 47, 0.06) 1px,
+            transparent 1px
+        );
+
+    background-size: 50px 50px;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================
+   PROFESSIONAL SKILLSET
+========================= */
+
+.skills-heading {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 45px;
+
+    font-size: 42px;
+
+    color: #682f2f;
+}
+
+.skills-heading strong {
+    color: #e91e8f;
+}
+
+
+/* =========================
+   SKILLS LIST
+========================= */
+
+.skills-list {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 22px;
+    padding: 10px 25px;
+}
+
+
+/* =========================
+   SKILL PILL
+========================= */
+
+.skill-pill {
+    min-width: 150px;
+
+    padding: 12px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: 2px solid #682f2f;
+
+    border-radius: 40px;
+
+    background-color: rgba(255, 250, 240, 0.8);
+
+    color: #682f2f;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 5px 12px rgba(104, 47, 47, 0.08);
+
+    transition: all 0.3s ease;
+
+    cursor: default;
+}
+
+
+/* =========================
+   SKILL HOVER
+========================= */
+
+.skill-pill:hover {
+    transform: translateY(-5px);
+
+    background-color: #682f2f;
+
+    color: #f4e8d0;
+
+    border-color: #e91e8f;
+
+    box-shadow:
+        0 10px 20px rgba(233, 30, 143, 0.2);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.skill-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #1769e0;
+
+    font-size: 18px;
+
+    flex-shrink: 0;
+}
+
+.skill-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Different icon color on hover */
+
+/* .skill-pill:hover .skill-icon {
+    background-color: #e91e8f;
+    
+
+    color: white;
+} */
+
+
+/* =========================
+   SKILL NAME
+========================= */
+
+.skill-name {
+    font-size: 27px;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TOOLS HEADING
+========================= */
+
+.tools-heading {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 100px;
+
+    margin-bottom: 40px;
+
+    font-size: 42px;
+
+    color: #682f2f;
+}
+
+.tools-heading strong {
+    color: #14cfa3;
+}
+
+
+/* =========================
+   TOOLS LIST
+========================= */
+
+.tools-list {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   TOOL PILL
+========================= */
+
+.tool-pill {
+    min-width: 180px;
+
+    border-color: #1769e0;
+}
+
+
+/* Tool hover */
+
+.tool-pill:hover {
+    background-color: #1769e0;
+
+    border-color: #14cfa3;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .skills {
+        padding: 80px 5%;
+    }
+
+    .skills-heading,
+    .tools-heading {
+        font-size: 34px;
+    }
+
+    .skill-pill {
+        min-width: 140px;
+
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .skills {
+        padding: 60px 4%;
+    }
+
+    .skills-heading,
+    .tools-heading {
+        font-size: 28px;
+
+        gap: 8px;
+    }
+
+    .skills-list,
+    .tools-list {
+        gap: 12px;
+    }
+
+    .skill-pill {
+        min-width: auto;
+
+        padding: 10px 15px;
+
+        font-size: 14px;
+    }
+
+    .skill-icon {
+        min-width: 25px;
+        font-size: 20px;
+        height: 25px;
+    }
+
+    .tools-heading {
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+.about {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin:20px;
+
+  background-image:
+        linear-gradient(rgba(120, 95, 65, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(120, 95, 65, 0.07) 1px, transparent 1px);
+
+  color: #6b2f2f;
+  font-family: "Space Mono", monospace;
+}
+
+
+/* =========================
+   STAR / BACKGROUND GRID
+========================= */
+
+.stars,
+.stars::before,
+.stars::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stars {
+  opacity: 0.65;
+
+  background-image:
+    linear-gradient(
+      rgba(107, 47, 47, 0.055) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(107, 47, 47, 0.055) 1px,
+      transparent 1px
+    );
+
+  background-size: 58px 58px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.08)
+  );
+}
+
+
+.prof{
+      height: 400px;
+    width: 401px;
+}
+
+.stars::before {
+  content: "";
+
+  opacity: 0.4;
+
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(107, 47, 47, 0.45) 1px,
+      transparent 1.5px
+    );
+
+  background-size: 170px 170px;
+  background-position: 30px 20px;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.about-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1660px, 100%);
+  min-height: 100vh;
+
+  margin: 0 auto;
+  padding: 70px 7%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 70px;
+
+  box-sizing: border-box;
+}
+
+.about-content {
+  max-width: 1080px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.about h1 {
+  margin: 0 0 65px;
+
+  font-size: clamp(38px, 3.2vw, 58px);
+  line-height: 1.15;
+
+  font-weight: 400;
+  letter-spacing: -2px;
+
+  color: #6b2f2f;
+}
+
+.about h1 span {
+  color: #f02b9b;
+}
+
+
+
+.about p {
+  margin: 0 0 38px;
+
+  font-size: clamp(17px, 1.25vw, 24px);
+  line-height: 1.75;
+
+  font-weight: 400;
+  letter-spacing: -0.5px;
+
+  color: #6b2f2f;
+}
+
+.highlight {
+  color: #f02b9b;
+
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Optional green accent */
+
+.about .green {
+  color: #11e7b2;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar-wrapper {
+  flex: 0 0 270px;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 90px;
+}
+
+.avatar-circle {
+  position: relative;
+
+  width: 270px;
+  height: 270px;
+
+  border-radius: 50%;
+
+  /*
+    Green + pink version of the
+    original purple circle
+  */
+  background:
+    linear-gradient(
+      135deg,
+      #f02b9b 0%,
+      #a629f2 48%,
+      #11e7b2 100%
+    );
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 45px rgba(107, 47, 47, 0.18);
+}
+
+.avatar {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+}
+
+
+/* =========================
+   HAIR
+========================= */
+
+.hair {
+  position: absolute;
+
+  width: 125px;
+  height: 105px;
+
+  top: 3px;
+  left: 72px;
+
+  background: #5b3028;
+
+  border-radius: 55% 55% 30% 30%;
+
+  z-index: 5;
+}
+
+.hair::before {
+  content: "";
+
+  position: absolute;
+
+  width: 35px;
+  height: 65px;
+
+  left: -5px;
+  top: 35px;
+
+  background: #5b3028;
+
+  border-radius: 70% 20% 0 0;
+
+  transform: rotate(15deg);
+}
+
+
+/* =========================
+   FACE
+========================= */
+
+.face {
+  position: absolute;
+
+  width: 115px;
+  height: 145px;
+
+  left: 78px;
+  top: 38px;
+
+  background: #ffd9ae;
+
+  border-radius: 45% 45% 50% 50%;
+
+  z-index: 4;
+}
+
+.ear {
+  position: absolute;
+
+  width: 22px;
+  height: 38px;
+
+  top: 65px;
+
+  background: #ffd9ae;
+
+  border-radius: 50%;
+}
+
+.left-ear {
+  left: -13px;
+}
+
+.right-ear {
+  right: -13px;
+}
+
+
+/* =========================
+   EYES
+========================= */
+
+.eye {
+  position: absolute;
+
+  width: 25px;
+  height: 12px;
+
+  top: 67px;
+
+  border-top: 4px solid #6b2f2f;
+
+  border-radius: 50%;
+}
+
+.left-eye {
+  left: 27px;
+
+  transform: rotate(-3deg);
+}
+
+.right-eye {
+  right: 27px;
+
+  transform: rotate(3deg);
+}
+
+
+/* =========================
+   NOSE
+========================= */
+
+.nose {
+  position: absolute;
+
+  width: 13px;
+  height: 8px;
+
+  left: 51px;
+  top: 82px;
+
+  border-bottom: 4px solid rgba(107, 47, 47, 0.35);
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   MOUTH
+========================= */
+
+.mouth {
+  position: absolute;
+
+  width: 43px;
+  height: 27px;
+
+  left: 36px;
+  top: 96px;
+
+  background: #6b2f2f;
+
+  border-radius: 0 0 30px 30px;
+
+  overflow: hidden;
+}
+
+.teeth {
+  width: 100%;
+  height: 10px;
+
+  background: #fffaf2;
+}
+
+.tongue {
+  position: absolute;
+
+  width: 25px;
+  height: 10px;
+
+  left: 9px;
+  bottom: -2px;
+
+  background: #f02b9b;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   NECK
+========================= */
+
+.neck {
+  position: absolute;
+
+  width: 40px;
+  height: 45px;
+
+  left: 115px;
+  top: 162px;
+
+  background: #ffd9ae;
+
+  z-index: 2;
+}
+
+
+/* =========================
+   HOODIE
+========================= */
+
+.hoodie {
+  position: absolute;
+
+  width: 220px;
+  height: 120px;
+
+  left: 25px;
+  bottom: -20px;
+
+  background: #6b2f2f;
+
+  border-radius: 80px 80px 0 0;
+
+  z-index: 3;
+}
+
+.hood {
+  position: absolute;
+
+  width: 95px;
+  height: 80px;
+
+  left: 63px;
+  top: -5px;
+
+  background: #512626;
+
+  border-radius: 45% 45% 50% 50%;
+
+  box-shadow:
+    inset 0 0 0 12px #442020;
+}
+
+.hoodie-string {
+  position: absolute;
+
+  width: 6px;
+  height: 72px;
+
+  top: 24px;
+
+  background: #f5ead7;
+
+  border-radius: 5px;
+}
+
+.left-string {
+  left: 72px;
+}
+
+.right-string {
+  right: 72px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .about-container {
+    padding: 55px 6%;
+  }
+
+  .avatar-wrapper {
+    flex-basis: 210px;
+  }
+
+  .avatar-circle {
+    width: 210px;
+    height: 210px;
+  }
+
+  .avatar {
+    transform: scale(0.78);
+    transform-origin: top left;
+  }
+
+  .about h1 {
+    margin-bottom: 45px;
+  }
+}
+
+
+/* =========================
+   TABLET / MOBILE
+========================= */
+
+@media (max-width: 800px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 45px 7%;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about h1 {
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+  }
+
+  .avatar-wrapper {
+    order: -1;
+
+    padding-top: 0;
+
+    flex-basis: auto;
+  }
+
+  .avatar-circle {
+    width: 190px;
+    height: 190px;
+  }
+
+  .avatar {
+    transform: scale(0.7);
+    transform-origin: top left;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 30px 22px;
+  }
+
+  .about h1 {
+    font-size: 29px;
+
+    letter-spacing: -1px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .avatar-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .avatar {
+    transform: scale(0.59);
+  }
+}
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/* Image container */
+
+.image-wrapper {
+    width: 360px;
+    height: 460px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background-color: #f4e8d0;
+
+    border: 4px solid #682f2f;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        2px 2px 0 #dedadc;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Decorative blue layer */
+
+.image-wrapper::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #a1a2a3;
+
+    top: 12px;
+    left: 12px;
+
+    z-index: -1;
+
+    border-radius: 25px;
+}
+
+
+/* Your actual image */
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Hover */
+
+.image-wrapper:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        16px 18px 0 #555555;
+}
+
+
+.image-wrapper:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-image {
+        margin-top: 40px;
+    }
+
+    .image-wrapper {
+        width: 300px;
+        height: 390px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .image-wrapper {
+        width: 260px;
+        height: 340px;
+
+        box-shadow:
+            8px 8px 0 #e91e8f;
+    }
+
+}
