@@ -1,6 +1,6 @@
 ﻿import "./home.css";
 import { Link } from "react-router-dom";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/Sriram_Teja_Resume1.pdf";
 
 const Home = () => {
   return (
