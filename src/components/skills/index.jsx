@@ -3,6 +3,10 @@ import "./index.css";
 const skills = [
     { name: "Python", icon: "🐍" },
     { name: "JavaScript", icon: "JS" },
+    { name: "TypeScript", icon: "TS" },
+    { name: "Angular", icon: "A" },
+    { name: "RxJS", icon: "Rx" },
+    { name: "NgRx", icon: "Ng" },
     { name: "React JS", icon: "⚛" },
     { name: "HTML", icon: "HTML" },
     { name: "CSS", icon: "CSS" },
@@ -18,7 +22,13 @@ const skills = [
 const tools = [
     { name: "VS Code", icon: "VS" },
     { name: "Jupyter Notebook", icon: "JN" },
+    { name: "Google Colab", icon: "GC" },
+    { name: "Git", icon: "Git" },
     { name: "GitHub", icon: "GH" },
+    { name: "SQL Server", icon: "SS" },
+    { name: "Power BI", icon: "BI" },
+    { name: "Postman", icon: "PM" },
+    { name: "MySQL Workbench", icon: "MW" },
 ];
 
 
