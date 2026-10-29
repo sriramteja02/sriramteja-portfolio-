@@ -27,7 +27,6 @@ const tools = [
     { name: "GitHub", icon: "GH" },
     { name: "SQL Server", icon: "SS" },
     { name: "Power BI", icon: "BI" },
-    { name: "Postman", icon: "PM" },
     { name: "MySQL Workbench", icon: "MW" },
 ];
 
